@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF403B99271E799900E58BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF403B98271E799900E58BED /* AppDelegate.swift */; };
-		BF403B9B271E799900E58BED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF403B9A271E799900E58BED /* SceneDelegate.swift */; };
-		BF403B9D271E799900E58BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF403B9C271E799900E58BED /* ViewController.swift */; };
 		BF403BA0271E799900E58BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF403B9E271E799900E58BED /* Main.storyboard */; };
 		BF403BA3271E799900E58BED /* WeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF403BA1271E799900E58BED /* WeatherApp.xcdatamodeld */; };
 		BF403BA5271E799D00E58BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF403BA4271E799D00E58BED /* Assets.xcassets */; };
@@ -19,7 +17,45 @@
 		BF403BBF271E799E00E58BED /* WeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF403BBE271E799E00E58BED /* WeatherAppUITestsLaunchTests.swift */; };
 		BF403BCD271E7AFB00E58BED /* DefaultNetworkOperationPackage in Frameworks */ = {isa = PBXBuildFile; productRef = BF403BCC271E7AFB00E58BED /* DefaultNetworkOperationPackage */; };
 		BF403BD0271E8E7300E58BED /* EndpointHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF403BCF271E8E7300E58BED /* EndpointHelper.swift */; };
-		BF403BD2271E90CB00E58BED /* SampleRequestServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF403BD1271E90CB00E58BED /* SampleRequestServiceProvider.swift */; };
+		BF403BD4271EA56D00E58BED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF403BD3271EA56D00E58BED /* GoogleService-Info.plist */; };
+		BF403BD7271EA9C300E58BED /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BF403BD6271EA9C300E58BED /* FirebaseAnalytics */; };
+		BF403BD9271EA9C300E58BED /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BF403BD8271EA9C300E58BED /* FirebaseAuth */; };
+		BFBB8A42271EB39E00A299F9 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A26271EB39E00A299F9 /* UIApplication+Extension.swift */; };
+		BFBB8A43271EB39E00A299F9 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A27271EB39E00A299F9 /* UIView+Extensions.swift */; };
+		BFBB8A44271EB39E00A299F9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A28271EB39E00A299F9 /* String+Extension.swift */; };
+		BFBB8A45271EB39E00A299F9 /* SFSymbolsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A2A271EB39E00A299F9 /* SFSymbolsHelper.swift */; };
+		BFBB8A46271EB39E00A299F9 /* TabBarImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A2B271EB39E00A299F9 /* TabBarImages.swift */; };
+		BFBB8A47271EB39E00A299F9 /* CommonUtilImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A2C271EB39E00A299F9 /* CommonUtilImages.swift */; };
+		BFBB8A48271EB39E00A299F9 /* PageViewImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A2D271EB39E00A299F9 /* PageViewImages.swift */; };
+		BFBB8A49271EB39E00A299F9 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A30271EB39E00A299F9 /* Roboto-Medium.ttf */; };
+		BFBB8A4A271EB39E00A299F9 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A31271EB39E00A299F9 /* Roboto-Light.ttf */; };
+		BFBB8A4B271EB39E00A299F9 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A32271EB39E00A299F9 /* Roboto-Regular.ttf */; };
+		BFBB8A4C271EB39E00A299F9 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A33271EB39E00A299F9 /* Roboto-MediumItalic.ttf */; };
+		BFBB8A4D271EB39E00A299F9 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A34271EB39E00A299F9 /* Roboto-ThinItalic.ttf */; };
+		BFBB8A4E271EB39E00A299F9 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A35271EB39E00A299F9 /* Roboto-BoldItalic.ttf */; };
+		BFBB8A4F271EB39E00A299F9 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A36271EB39E00A299F9 /* Roboto-LightItalic.ttf */; };
+		BFBB8A50271EB39E00A299F9 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A37271EB39E00A299F9 /* Roboto-Italic.ttf */; };
+		BFBB8A51271EB39E00A299F9 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A38271EB39E00A299F9 /* LICENSE.txt */; };
+		BFBB8A52271EB39E00A299F9 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A39271EB39E00A299F9 /* Roboto-BlackItalic.ttf */; };
+		BFBB8A53271EB39E00A299F9 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A3A271EB39E00A299F9 /* Roboto-Bold.ttf */; };
+		BFBB8A54271EB39E00A299F9 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A3B271EB39E00A299F9 /* Roboto-Thin.ttf */; };
+		BFBB8A55271EB39E00A299F9 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBB8A3C271EB39E00A299F9 /* Roboto-Black.ttf */; };
+		BFBB8A56271EB39E00A299F9 /* MainFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A3E271EB39E00A299F9 /* MainFont.swift */; };
+		BFBB8A57271EB39E00A299F9 /* TutorialViewInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A40271EB39E00A299F9 /* TutorialViewInfoStore.swift */; };
+		BFBB8A58271EB39E00A299F9 /* UserDefaultsWrapperHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A41271EB39E00A299F9 /* UserDefaultsWrapperHelper.swift */; };
+		BFBB8A61271EB3A600A299F9 /* GenericRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A5A271EB3A600A299F9 /* GenericRowType.swift */; };
+		BFBB8A62271EB3A600A299F9 /* GenericValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A5B271EB3A600A299F9 /* GenericValueProtocol.swift */; };
+		BFBB8A63271EB3A600A299F9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A5C271EB3A600A299F9 /* BaseViewController.swift */; };
+		BFBB8A64271EB3A600A299F9 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A5D271EB3A600A299F9 /* BaseTableViewCell.swift */; };
+		BFBB8A65271EB3A600A299F9 /* GenericDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A5E271EB3A600A299F9 /* GenericDataProtocol.swift */; };
+		BFBB8A66271EB3A600A299F9 /* GenericBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A5F271EB3A600A299F9 /* GenericBaseView.swift */; };
+		BFBB8A67271EB3A600A299F9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A60271EB3A600A299F9 /* BaseView.swift */; };
+		BFBB8A6C271EB3EC00A299F9 /* MainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A6B271EB3EC00A299F9 /* MainViewBuilder.swift */; };
+		BFBB8A6E271EB3FC00A299F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A6D271EB3FC00A299F9 /* MainViewController.swift */; };
+		BFBB8A70271EB40300A299F9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A6F271EB40300A299F9 /* MainViewModel.swift */; };
+		BFBB8A72271EB48F00A299F9 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A71271EB48F00A299F9 /* SplashViewModel.swift */; };
+		BFBB8A74271EB49600A299F9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A73271EB49600A299F9 /* SplashViewController.swift */; };
+		BFBB8A76271EB49C00A299F9 /* SplashViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB8A75271EB49C00A299F9 /* SplashViewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +78,6 @@
 /* Begin PBXFileReference section */
 		BF403B95271E799900E58BED /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF403B98271E799900E58BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF403B9A271E799900E58BED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF403B9C271E799900E58BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF403B9F271E799900E58BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF403BA2271E799900E58BED /* WeatherApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherApp.xcdatamodel; sourceTree = "<group>"; };
 		BF403BA4271E799D00E58BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,7 +89,43 @@
 		BF403BBC271E799E00E58BED /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		BF403BBE271E799E00E58BED /* WeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BF403BCF271E8E7300E58BED /* EndpointHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointHelper.swift; sourceTree = "<group>"; };
-		BF403BD1271E90CB00E58BED /* SampleRequestServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRequestServiceProvider.swift; sourceTree = "<group>"; };
+		BF403BD3271EA56D00E58BED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFBB8A26271EB39E00A299F9 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		BFBB8A27271EB39E00A299F9 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BFBB8A28271EB39E00A299F9 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		BFBB8A2A271EB39E00A299F9 /* SFSymbolsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSymbolsHelper.swift; sourceTree = "<group>"; };
+		BFBB8A2B271EB39E00A299F9 /* TabBarImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarImages.swift; sourceTree = "<group>"; };
+		BFBB8A2C271EB39E00A299F9 /* CommonUtilImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtilImages.swift; sourceTree = "<group>"; };
+		BFBB8A2D271EB39E00A299F9 /* PageViewImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewImages.swift; sourceTree = "<group>"; };
+		BFBB8A30271EB39E00A299F9 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		BFBB8A31271EB39E00A299F9 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		BFBB8A32271EB39E00A299F9 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		BFBB8A33271EB39E00A299F9 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		BFBB8A34271EB39E00A299F9 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		BFBB8A35271EB39E00A299F9 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BFBB8A36271EB39E00A299F9 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		BFBB8A37271EB39E00A299F9 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		BFBB8A38271EB39E00A299F9 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		BFBB8A39271EB39E00A299F9 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		BFBB8A3A271EB39E00A299F9 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		BFBB8A3B271EB39E00A299F9 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		BFBB8A3C271EB39E00A299F9 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		BFBB8A3E271EB39E00A299F9 /* MainFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFont.swift; sourceTree = "<group>"; };
+		BFBB8A40271EB39E00A299F9 /* TutorialViewInfoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewInfoStore.swift; sourceTree = "<group>"; };
+		BFBB8A41271EB39E00A299F9 /* UserDefaultsWrapperHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapperHelper.swift; sourceTree = "<group>"; };
+		BFBB8A5A271EB3A600A299F9 /* GenericRowType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRowType.swift; sourceTree = "<group>"; };
+		BFBB8A5B271EB3A600A299F9 /* GenericValueProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericValueProtocol.swift; sourceTree = "<group>"; };
+		BFBB8A5C271EB3A600A299F9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BFBB8A5D271EB3A600A299F9 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		BFBB8A5E271EB3A600A299F9 /* GenericDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDataProtocol.swift; sourceTree = "<group>"; };
+		BFBB8A5F271EB3A600A299F9 /* GenericBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericBaseView.swift; sourceTree = "<group>"; };
+		BFBB8A60271EB3A600A299F9 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		BFBB8A6B271EB3EC00A299F9 /* MainViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewBuilder.swift; sourceTree = "<group>"; };
+		BFBB8A6D271EB3FC00A299F9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BFBB8A6F271EB40300A299F9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		BFBB8A71271EB48F00A299F9 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		BFBB8A73271EB49600A299F9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		BFBB8A75271EB49C00A299F9 /* SplashViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +133,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF403BD7271EA9C300E58BED /* FirebaseAnalytics in Frameworks */,
+				BF403BD9271EA9C300E58BED /* FirebaseAuth in Frameworks */,
 				BF403BCD271E7AFB00E58BED /* DefaultNetworkOperationPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,12 +179,14 @@
 		BF403B97271E799900E58BED /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				BFBB8A68271EB3C000A299F9 /* SceneModules */,
+				BFBB8A59271EB3A600A299F9 /* BaseComponents */,
+				BFBB8A24271EB39E00A299F9 /* Utilities */,
 				BF403BCE271E8E5D00E58BED /* NewtworkModules */,
 				BF403B98271E799900E58BED /* AppDelegate.swift */,
-				BF403B9A271E799900E58BED /* SceneDelegate.swift */,
-				BF403B9C271E799900E58BED /* ViewController.swift */,
 				BF403B9E271E799900E58BED /* Main.storyboard */,
 				BF403BA4271E799D00E58BED /* Assets.xcassets */,
+				BF403BD3271EA56D00E58BED /* GoogleService-Info.plist */,
 				BF403BA6271E799D00E58BED /* LaunchScreen.storyboard */,
 				BF403BA9271E799D00E58BED /* Info.plist */,
 				BF403BA1271E799900E58BED /* WeatherApp.xcdatamodeld */,
@@ -141,9 +215,129 @@
 			isa = PBXGroup;
 			children = (
 				BF403BCF271E8E7300E58BED /* EndpointHelper.swift */,
-				BF403BD1271E90CB00E58BED /* SampleRequestServiceProvider.swift */,
 			);
 			path = NewtworkModules;
+			sourceTree = "<group>";
+		};
+		BFBB8A24271EB39E00A299F9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB8A25271EB39E00A299F9 /* Extensions */,
+				BFBB8A29271EB39E00A299F9 /* AssetHelpers */,
+				BFBB8A2E271EB39E00A299F9 /* FontManagers */,
+				BFBB8A3F271EB39E00A299F9 /* UserDefaultsHelpers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BFBB8A25271EB39E00A299F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB8A26271EB39E00A299F9 /* UIApplication+Extension.swift */,
+				BFBB8A27271EB39E00A299F9 /* UIView+Extensions.swift */,
+				BFBB8A28271EB39E00A299F9 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BFBB8A29271EB39E00A299F9 /* AssetHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB8A2A271EB39E00A299F9 /* SFSymbolsHelper.swift */,
+				BFBB8A2B271EB39E00A299F9 /* TabBarImages.swift */,
+				BFBB8A2C271EB39E00A299F9 /* CommonUtilImages.swift */,
+				BFBB8A2D271EB39E00A299F9 /* PageViewImages.swift */,
+			);
+			path = AssetHelpers;
+			sourceTree = "<group>";
+		};
+		BFBB8A2E271EB39E00A299F9 /* FontManagers */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB8A2F271EB39E00A299F9 /* Roboto */,
+				BFBB8A3D271EB39E00A299F9 /* Helpers */,
+			);
+			path = FontManagers;
+			sourceTree = "<group>";
+		};
+		BFBB8A2F271EB39E00A299F9 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB8A30271EB39E00A299F9 /* Roboto-Medium.ttf */,
+				BFBB8A31271EB39E00A299F9 /* Roboto-Light.ttf */,
+				BFBB8A32271EB39E00A299F9 /* Roboto-Regular.ttf */,
+				BFBB8A33271EB39E00A299F9 /* Roboto-MediumItalic.ttf */,
+				BFBB8A34271EB39E00A299F9 /* Roboto-ThinItalic.ttf */,
+				BFBB8A35271EB39E00A299F9 /* Roboto-BoldItalic.ttf */,
+				BFBB8A36271EB39E00A299F9 /* Roboto-LightItalic.ttf */,
+				BFBB8A37271EB39E00A299F9 /* Roboto-Italic.ttf */,
+				BFBB8A38271EB39E00A299F9 /* LICENSE.txt */,
+				BFBB8A39271EB39E00A299F9 /* Roboto-BlackItalic.ttf */,
+				BFBB8A3A271EB39E00A299F9 /* Roboto-Bold.ttf */,
+				BFBB8A3B271EB39E00A299F9 /* Roboto-Thin.ttf */,
+				BFBB8A3C271EB39E00A299F9 /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		BFBB8A3D271EB39E00A299F9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB8A3E271EB39E00A299F9 /* MainFont.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BFBB8A3F271EB39E00A299F9 /* UserDefaultsHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB8A40271EB39E00A299F9 /* TutorialViewInfoStore.swift */,
+				BFBB8A41271EB39E00A299F9 /* UserDefaultsWrapperHelper.swift */,
+			);
+			path = UserDefaultsHelpers;
+			sourceTree = "<group>";
+		};
+		BFBB8A59271EB3A600A299F9 /* BaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB8A5A271EB3A600A299F9 /* GenericRowType.swift */,
+				BFBB8A5B271EB3A600A299F9 /* GenericValueProtocol.swift */,
+				BFBB8A5C271EB3A600A299F9 /* BaseViewController.swift */,
+				BFBB8A5D271EB3A600A299F9 /* BaseTableViewCell.swift */,
+				BFBB8A5E271EB3A600A299F9 /* GenericDataProtocol.swift */,
+				BFBB8A5F271EB3A600A299F9 /* GenericBaseView.swift */,
+				BFBB8A60271EB3A600A299F9 /* BaseView.swift */,
+			);
+			path = BaseComponents;
+			sourceTree = "<group>";
+		};
+		BFBB8A68271EB3C000A299F9 /* SceneModules */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB8A6A271EB3D500A299F9 /* Main */,
+				BFBB8A69271EB3CD00A299F9 /* Splash */,
+			);
+			path = SceneModules;
+			sourceTree = "<group>";
+		};
+		BFBB8A69271EB3CD00A299F9 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB8A71271EB48F00A299F9 /* SplashViewModel.swift */,
+				BFBB8A73271EB49600A299F9 /* SplashViewController.swift */,
+				BFBB8A75271EB49C00A299F9 /* SplashViewBuilder.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		BFBB8A6A271EB3D500A299F9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB8A6B271EB3EC00A299F9 /* MainViewBuilder.swift */,
+				BFBB8A6D271EB3FC00A299F9 /* MainViewController.swift */,
+				BFBB8A6F271EB40300A299F9 /* MainViewModel.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +358,8 @@
 			name = WeatherApp;
 			packageProductDependencies = (
 				BF403BCC271E7AFB00E58BED /* DefaultNetworkOperationPackage */,
+				BF403BD6271EA9C300E58BED /* FirebaseAnalytics */,
+				BF403BD8271EA9C300E58BED /* FirebaseAuth */,
 			);
 			productName = WeatherApp;
 			productReference = BF403B95271E799900E58BED /* WeatherApp.app */;
@@ -239,6 +435,7 @@
 			mainGroup = BF403B8C271E799900E58BED;
 			packageReferences = (
 				BF403BCB271E7AFB00E58BED /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */,
+				BF403BD5271EA9C300E58BED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = BF403B96271E799900E58BED /* Products */;
 			projectDirPath = "";
@@ -256,8 +453,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBB8A54271EB39E00A299F9 /* Roboto-Thin.ttf in Resources */,
+				BFBB8A49271EB39E00A299F9 /* Roboto-Medium.ttf in Resources */,
+				BFBB8A50271EB39E00A299F9 /* Roboto-Italic.ttf in Resources */,
+				BFBB8A53271EB39E00A299F9 /* Roboto-Bold.ttf in Resources */,
+				BFBB8A4F271EB39E00A299F9 /* Roboto-LightItalic.ttf in Resources */,
+				BFBB8A55271EB39E00A299F9 /* Roboto-Black.ttf in Resources */,
+				BFBB8A52271EB39E00A299F9 /* Roboto-BlackItalic.ttf in Resources */,
+				BFBB8A4B271EB39E00A299F9 /* Roboto-Regular.ttf in Resources */,
 				BF403BA8271E799D00E58BED /* LaunchScreen.storyboard in Resources */,
+				BFBB8A51271EB39E00A299F9 /* LICENSE.txt in Resources */,
+				BFBB8A4A271EB39E00A299F9 /* Roboto-Light.ttf in Resources */,
+				BFBB8A4C271EB39E00A299F9 /* Roboto-MediumItalic.ttf in Resources */,
+				BF403BD4271EA56D00E58BED /* GoogleService-Info.plist in Resources */,
+				BFBB8A4D271EB39E00A299F9 /* Roboto-ThinItalic.ttf in Resources */,
 				BF403BA5271E799D00E58BED /* Assets.xcassets in Resources */,
+				BFBB8A4E271EB39E00A299F9 /* Roboto-BoldItalic.ttf in Resources */,
 				BF403BA0271E799900E58BED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,11 +494,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF403BD2271E90CB00E58BED /* SampleRequestServiceProvider.swift in Sources */,
+				BFBB8A56271EB39E00A299F9 /* MainFont.swift in Sources */,
+				BFBB8A65271EB3A600A299F9 /* GenericDataProtocol.swift in Sources */,
+				BFBB8A44271EB39E00A299F9 /* String+Extension.swift in Sources */,
+				BFBB8A74271EB49600A299F9 /* SplashViewController.swift in Sources */,
+				BFBB8A58271EB39E00A299F9 /* UserDefaultsWrapperHelper.swift in Sources */,
+				BFBB8A64271EB3A600A299F9 /* BaseTableViewCell.swift in Sources */,
+				BFBB8A70271EB40300A299F9 /* MainViewModel.swift in Sources */,
+				BFBB8A57271EB39E00A299F9 /* TutorialViewInfoStore.swift in Sources */,
+				BFBB8A43271EB39E00A299F9 /* UIView+Extensions.swift in Sources */,
+				BFBB8A63271EB3A600A299F9 /* BaseViewController.swift in Sources */,
+				BFBB8A67271EB3A600A299F9 /* BaseView.swift in Sources */,
+				BFBB8A6C271EB3EC00A299F9 /* MainViewBuilder.swift in Sources */,
+				BFBB8A62271EB3A600A299F9 /* GenericValueProtocol.swift in Sources */,
+				BFBB8A61271EB3A600A299F9 /* GenericRowType.swift in Sources */,
+				BFBB8A47271EB39E00A299F9 /* CommonUtilImages.swift in Sources */,
+				BFBB8A46271EB39E00A299F9 /* TabBarImages.swift in Sources */,
+				BFBB8A6E271EB3FC00A299F9 /* MainViewController.swift in Sources */,
+				BFBB8A48271EB39E00A299F9 /* PageViewImages.swift in Sources */,
+				BFBB8A66271EB3A600A299F9 /* GenericBaseView.swift in Sources */,
+				BFBB8A45271EB39E00A299F9 /* SFSymbolsHelper.swift in Sources */,
 				BF403BA3271E799900E58BED /* WeatherApp.xcdatamodeld in Sources */,
-				BF403B9D271E799900E58BED /* ViewController.swift in Sources */,
+				BFBB8A72271EB48F00A299F9 /* SplashViewModel.swift in Sources */,
+				BFBB8A76271EB49C00A299F9 /* SplashViewBuilder.swift in Sources */,
 				BF403B99271E799900E58BED /* AppDelegate.swift in Sources */,
-				BF403B9B271E799900E58BED /* SceneDelegate.swift in Sources */,
+				BFBB8A42271EB39E00A299F9 /* UIApplication+Extension.swift in Sources */,
 				BF403BD0271E8E7300E58BED /* EndpointHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +700,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherApplication;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -496,6 +728,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherApplication;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -656,6 +889,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		BF403BD5271EA9C300E58BED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -663,6 +904,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BF403BCB271E7AFB00E58BED /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */;
 			productName = DefaultNetworkOperationPackage;
+		};
+		BF403BD6271EA9C300E58BED /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF403BD5271EA9C300E58BED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		BF403BD8271EA9C300E58BED /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF403BD5271EA9C300E58BED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 
