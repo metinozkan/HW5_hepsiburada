@@ -17,6 +17,9 @@
 		BF403BB3271E799E00E58BED /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF403BB2271E799E00E58BED /* WeatherAppTests.swift */; };
 		BF403BBD271E799E00E58BED /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF403BBC271E799E00E58BED /* WeatherAppUITests.swift */; };
 		BF403BBF271E799E00E58BED /* WeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF403BBE271E799E00E58BED /* WeatherAppUITestsLaunchTests.swift */; };
+		BF403BCD271E7AFB00E58BED /* DefaultNetworkOperationPackage in Frameworks */ = {isa = PBXBuildFile; productRef = BF403BCC271E7AFB00E58BED /* DefaultNetworkOperationPackage */; };
+		BF403BD0271E8E7300E58BED /* EndpointHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF403BCF271E8E7300E58BED /* EndpointHelper.swift */; };
+		BF403BD2271E90CB00E58BED /* SampleRequestServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF403BD1271E90CB00E58BED /* SampleRequestServiceProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		BF403BB8271E799E00E58BED /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF403BBC271E799E00E58BED /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		BF403BBE271E799E00E58BED /* WeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF403BCF271E8E7300E58BED /* EndpointHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointHelper.swift; sourceTree = "<group>"; };
+		BF403BD1271E90CB00E58BED /* SampleRequestServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRequestServiceProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF403BCD271E7AFB00E58BED /* DefaultNetworkOperationPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +107,7 @@
 		BF403B97271E799900E58BED /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				BF403BCE271E8E5D00E58BED /* NewtworkModules */,
 				BF403B98271E799900E58BED /* AppDelegate.swift */,
 				BF403B9A271E799900E58BED /* SceneDelegate.swift */,
 				BF403B9C271E799900E58BED /* ViewController.swift */,
@@ -130,6 +137,15 @@
 			path = WeatherAppUITests;
 			sourceTree = "<group>";
 		};
+		BF403BCE271E8E5D00E58BED /* NewtworkModules */ = {
+			isa = PBXGroup;
+			children = (
+				BF403BCF271E8E7300E58BED /* EndpointHelper.swift */,
+				BF403BD1271E90CB00E58BED /* SampleRequestServiceProvider.swift */,
+			);
+			path = NewtworkModules;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +162,9 @@
 			dependencies = (
 			);
 			name = WeatherApp;
+			packageProductDependencies = (
+				BF403BCC271E7AFB00E58BED /* DefaultNetworkOperationPackage */,
+			);
 			productName = WeatherApp;
 			productReference = BF403B95271E799900E58BED /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +237,9 @@
 				Base,
 			);
 			mainGroup = BF403B8C271E799900E58BED;
+			packageReferences = (
+				BF403BCB271E7AFB00E58BED /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */,
+			);
 			productRefGroup = BF403B96271E799900E58BED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,10 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF403BD2271E90CB00E58BED /* SampleRequestServiceProvider.swift in Sources */,
 				BF403BA3271E799900E58BED /* WeatherApp.xcdatamodeld in Sources */,
 				BF403B9D271E799900E58BED /* ViewController.swift in Sources */,
 				BF403B99271E799900E58BED /* AppDelegate.swift in Sources */,
 				BF403B9B271E799900E58BED /* SceneDelegate.swift in Sources */,
+				BF403BD0271E8E7300E58BED /* EndpointHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +646,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF403BCB271E7AFB00E58BED /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/darkbringer1/DefaultNetworkOperationPackage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF403BCC271E7AFB00E58BED /* DefaultNetworkOperationPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF403BCB271E7AFB00E58BED /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */;
+			productName = DefaultNetworkOperationPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BF403BA1271E799900E58BED /* WeatherApp.xcdatamodeld */ = {
