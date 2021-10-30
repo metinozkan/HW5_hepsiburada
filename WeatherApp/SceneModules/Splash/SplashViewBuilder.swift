@@ -11,7 +11,8 @@ import UIKit
 class SplashViewBuilder {
     
     
-    class func build()-> UIViewController {
-        return SplashViewController(viewModel:SplashViewModel() )
+    class func build(with completion: @escaping VoidBlock)-> UIViewController {
+        let viewModel = SplashViewModel(completion: completion)
+        return SplashViewController(viewModel:viewModel)
     }
 }

@@ -23,12 +23,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         self.window=UIWindow()
-        let mainView = MainViewBuilder.build()
-        
+        let mainView = SplashViewBuilder.build{
+            print ("finish splash")
+            self.fireMainView()
+        }
         window?.rootViewController=mainView
         window?.makeKeyAndVisible()
+      
         
         return true
+    }
+    
+    private func fireMainView() {
+        let mainView = MainViewBuilder.build()
+        window?.rootViewController=mainView
+        window?.makeKeyAndVisible()
     }
 
 
